@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SDWebImage'
   s.version = '3.7.1'
-  s.platform = :ios, '5.0'
   s.license = 'MIT'
   s.summary = 'Asynchronous image downloader with cache support with an UIImageView category.'
   s.homepage = 'https://github.com/rs/SDWebImage'
@@ -18,6 +17,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.framework = 'ImageIO'
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.9;
   
   s.default_subspec = 'Core'
 
